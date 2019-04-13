@@ -62,29 +62,12 @@
       <div class="content-center">
         <div class="row row-grid justify-content-between align-items-center text-left">
           <div class="col-lg-6 col-md-6">
-            <ul class="list-item">
-              <?php foreach ($tasks as $task): ?>
-              <li>
-                <?php if ($task->completed): ?>
-                <strike>
-                  <?=$task->description;?>
-                </strike>
-                <?php else: ?>
-                <?=$task->description;?>
-                <?php endif;?>
-              </li>
-              <?php endforeach;?>
-            </ul>
+            <h1 class="title"><?php echo $name; ?></h1>
           </div>
 
           <div class="col-lg-4 col-md-5">
             <img src="assets/img/etherum.png" class="img-fluid" />
           </div>
-
-          <form class="form" method="POST" action="/names">
-            <input class="" type="text" name="name">
-            <input type="submit" value="Submit">
-          </form>
         </div>
       </div>
     </div>
