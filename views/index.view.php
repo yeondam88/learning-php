@@ -85,6 +85,16 @@
             <input class="" type="text" name="name">
             <input type="submit" value="Submit">
           </form>
+
+          <div class="col-lg-6 col-md-6">
+            <ul class="list-item">
+              <?php foreach ($users as $user): ?>
+              <li>
+                <?=$user->name;?>
+              </li>
+              <?php endforeach;?>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

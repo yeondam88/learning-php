@@ -1,5 +1,8 @@
 <?php
 
-$name = $_POST['name'];
+$app['database']->insert('users', [
+    'name' => $_POST['name'],
+]);
 
-require 'views/add-name.view.php';
+header('Location: /');
+// require 'views/add-name.view.php';
